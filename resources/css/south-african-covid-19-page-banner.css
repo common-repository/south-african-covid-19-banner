@@ -1,0 +1,127 @@
+.banner-top-fixed,
+.banner-top-scroll {
+	padding-top: 95px;
+}
+
+.banner-bottom-fixed {
+	padding-bottom: 86px;
+}
+
+.corona-page-banner {
+	display: block;
+	background-color: white;
+	text-align: center;
+	padding: 1em;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.6em;
+}
+
+.banner-top-scroll .corona-page-banner {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99998;
+	border-bottom: 1px solid;
+}
+
+.banner-top-fixed .corona-page-banner {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99998;
+	-webkit-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	-moz-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+}
+
+.banner-bottom-fixed .corona-page-banner {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 99998;
+	-webkit-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	-moz-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+}
+
+.banner-bottom-scroll .corona-page-banner {
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 99998;
+	-webkit-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	-moz-box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+	box-shadow: 0 5px 7px 5px rgba(102, 102, 102, 0.3);
+}
+
+.corona-page-banner .corona-banner-content {
+	display: flex;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+}
+
+.corona-page-banner a.corona-banner-website-link {
+	display: block;
+}
+
+.corona-page-bannerimg.corona-banner-website-link-img {
+	display: inline-block;
+	border: 0;
+	margin-right: 20px;
+}
+
+.corona-page-banner a.corona-banner-hotline-link,
+.corona-page-banner a.corona-banner-whatsapp-link,
+.corona-page-banner a.corona-banner-hotline-link:visited,
+.corona-page-banner a.corona-banner-whatsapp-link:visited {
+	display: block;
+	text-decoration: none;
+	color: #e95211;
+}
+
+.corona-page-banner a.corona-banner-hotline-link:hover,
+.corona-page-banner a.corona-banner-whatsapp-link:hover {
+	text-decoration: underline;
+	color: #e95211;
+}
+
+.corona-page-banner a.corona-banner-hotline-link {
+	font-weight: bold;
+}
+
+
+@media screen and ( max-width: 768px ) {
+
+	.banner-top-fixed {
+		padding-top: 100px;
+	}
+
+	.banner-bottom-fixed {
+		padding-bottom: 140px;
+	}
+
+	.corona-page-banner .corona-banner-content {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.corona-page-banner .corona-banner-website-link {
+		width: 100%;
+		text-align: center;
+	}
+
+	.corona-page-banner .corona-banner-website-link-img {
+		margin: 0;
+	}
+
+	.corona-page-banner .corona-banner-hotline-link,
+	.corona-page-banner .corona-banner-whatsapp-link {
+		padding: 5px 0;
+	}
+}
